@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+int main() {
+
+
+    char numericalconst[100];
+    int length, i;
+
+    cout << "Enter the string: ";
+    cin >> numericalconst;
+
+
+    length = strlen (numericalconst);
+    for (i=0;i<length; i++)
+        if (!isdigit(numericalconst[i]))
+        {
+            cout << "Entered input is not a number" << endl;
+            return 0;
+        }
+    cout << "Given input is a number" << endl;
+        return 0;
+
+}

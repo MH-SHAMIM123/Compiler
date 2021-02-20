@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+int main() {
+
+
+    char m[100];
+    int length, i;
+
+    cout << "Enter the string: ";
+    cin >> m;
+
+
+    length = strlen (m);
+    for (i=0;i<length; i++)
+    {
+        if (m[i] == '+' || m[i] == '-' || m[i] == '/' || m[i] == '*')
+        {
+            cout << "Entered input has an operator" << endl;
+        }
+    }
+
+        return 0;
+
+}
